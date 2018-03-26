@@ -1,2 +1,3 @@
 ---
-# tasks file for ubuntu
+- import_tasks: packages.yml
+  tags: ubuntu-packages

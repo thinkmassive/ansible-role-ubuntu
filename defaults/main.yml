@@ -1,2 +1,7 @@
 ---
-# defaults file for ubuntu
+common_packages:
+  - haveged
+  - htop
+  - lsof
+  - tmux
+  - vim

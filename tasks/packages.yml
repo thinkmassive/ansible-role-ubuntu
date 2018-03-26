@@ -1,0 +1,13 @@
+---
+- name: Update packages
+  apt:
+    autoclean: yes
+    update_cache: yes
+    upgrade: yes
+    force_apt_get: true
+
+- name: Install common packages
+  apt:
+    name: "{{ item }}"
+    force_apt_get: true
+  with_items: "{{ common_packages }}"
